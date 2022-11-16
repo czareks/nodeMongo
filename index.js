@@ -6,7 +6,9 @@ app.get('/', (req, res)=>{
     res.send('serwer dziala');
 });
 
-app.listen(8888, () =>{
+const port = process.env.PORT || 8888;
+
+app.listen(port, () =>{
     console.log("Aplikacja działa na porcie 8888");
 });
 
