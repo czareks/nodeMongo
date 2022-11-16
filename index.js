@@ -9,6 +9,6 @@ app.get('/', (req, res)=>{
 const port = process.env.PORT || 8888;
 
 app.listen(port, () =>{
-    console.log("Aplikacja działa na porcie 8888");
+    console.log(`Aplikacja działa na porcie ${port}`);
 });
 
